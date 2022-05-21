@@ -18,9 +18,9 @@ int main (void){
 
   for (int i = 0; i < 6; i++)
   {
-    cout << "Cuales el valo de la hora del empleado " << 1 + i << ": ";
+    cout << "Cuales el valor de la hora del empleado " << 1 + i << ": ";
     cin >> hora;
-    cout << "Cuales el valo de la hora extra del empleado " << 1 + i << ": ";
+    cout << "Cuales el valor de la hora extra del empleado " << 1 + i << ": ";
     cin >> extra;
 
     listaEmpl[i][0] = hora;
@@ -42,7 +42,7 @@ int main (void){
 
   while (nroEmpleado != 0){
 
-    cout << "Para el empleado: " << nroEmpleado;
+    cout << "Para el empleado: " << nroEmpleado << endl;
     cout << "Dia: ";
     cin >> dia;
     cout << "Total horas trabajadas en el dia: ";

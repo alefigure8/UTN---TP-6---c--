@@ -1,1 +1,2 @@
-nroVenta
+
+    cout << "Las ganancias fueron de $" <
