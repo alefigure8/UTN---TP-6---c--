@@ -16,6 +16,12 @@ int main (void){
   int vector_3[v3];
   int cont = 0;
 
+  for (int i = 0; i < v3; i++)
+  {
+    vector_3[i] = 0;
+  }
+  
+
   for (int i = 0; i < v1; i++)
   {
     int n;
@@ -32,18 +38,18 @@ int main (void){
     vector_2[i] = n;
   }
 
-  for (int i = 0; i < v3; i++)
+  for (int  i = 0; i < v1; i++)
   {
-    if(i < v1){
-      vector_3[i] = vector_1[i];
-
-    } else {
-      vector_3[i] = vector_2[cont];
-      cont++;
+    for (int j = 0; j < v2; j++)
+    {
+      if(vector_1[i] == vector_2[j]){
+        vector_3[cont] = vector_1[i];
+        cont++;
+      }
     }
   }
 
-  for (int i = 0; i < v3; i++)
+  for (int i = 0; i < cont; i++)
   {
     cout << vector_3[i] << endl;
   }
